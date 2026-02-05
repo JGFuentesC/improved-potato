@@ -1,0 +1,106 @@
+edadEmprendedor
+dependientesEconomicos
+familiaAyuda
+antiguedadNegocio
+numEmpleados
+ventasPromedioDiarias
+usaCredito
+sexoEmprendedor_M
+sexoEmprendedor_O
+escolaridadEmprendedor_bachillerato trunco
+escolaridadEmprendedor_posgrado
+escolaridadEmprendedor_primaria
+escolaridadEmprendedor_secundaria
+escolaridadEmprendedor_universidad terminado
+escolaridadEmprendedor_universidad trunca
+estadoCivil_divorciado
+estadoCivil_soltero
+estadoCivil_union libre
+estadoCivil_viudo
+giroNegocio_academia de danza
+giroNegocio_accesorios para mascota
+giroNegocio_accesorios para mascotas
+giroNegocio_accesorios telefónicos
+giroNegocio_artículos de limpieza
+giroNegocio_automotriz
+giroNegocio_banquetes
+giroNegocio_bazar
+giroNegocio_brujería
+giroNegocio_cafe internet
+giroNegocio_calzado
+giroNegocio_carnicería
+giroNegocio_cibercafé
+giroNegocio_comercio minorista de materias primas
+giroNegocio_comercio minorista de productos terminados
+giroNegocio_consultorios médicos, dentales, veterinarios
+giroNegocio_costurero
+giroNegocio_cremeria
+giroNegocio_de temporada
+giroNegocio_despacho contable
+giroNegocio_despacho jurídico
+giroNegocio_escuela de manejo
+giroNegocio_estampados y publicidad.
+giroNegocio_estetica
+giroNegocio_estética
+giroNegocio_farmacia
+giroNegocio_fonda o restaurante/alimentos
+giroNegocio_frenos
+giroNegocio_frutas y verduras
+giroNegocio_herrajes y tlapalería
+giroNegocio_internet
+giroNegocio_jarceria, productos de limpieza
+giroNegocio_jarcería
+giroNegocio_librería
+giroNegocio_lonas y reparación
+giroNegocio_mecánico
+giroNegocio_negocio mercantil con giro comercial en venta de tortillas
+giroNegocio_panadería
+giroNegocio_papelería
+giroNegocio_pasteleria
+giroNegocio_pastelería
+giroNegocio_pictórica
+giroNegocio_pintura
+giroNegocio_planchaduría
+giroNegocio_pollería
+giroNegocio_productos de limpieza
+giroNegocio_productos decorativos
+giroNegocio_publicidad
+giroNegocio_purificadora de agua.
+giroNegocio_rea pa uno de zapatos
+giroNegocio_recaudería
+giroNegocio_regalos
+giroNegocio_reparaciones celulares
+giroNegocio_reparaciones electrónicas.
+giroNegocio_reparadora de calzado
+giroNegocio_reparadora de electrodomésticos
+giroNegocio_repostería
+giroNegocio_ropa
+giroNegocio_rosticeria
+giroNegocio_salud y belleza
+giroNegocio_sandalias
+giroNegocio_sastrería
+giroNegocio_semillas
+giroNegocio_servicios  personales(estéticas, spa, uñas, barberías, etc)
+giroNegocio_servicios de reparación
+giroNegocio_servicios para el hogar (cerrajería, plomería, jardinería, etc)
+giroNegocio_suspensiones y ruedas de méxico
+giroNegocio_taller de motocicletas
+giroNegocio_telecomunicaciones
+giroNegocio_tienda
+giroNegocio_tintoreria y limpieza
+giroNegocio_tlapaleria
+giroNegocio_tortillería
+giroNegocio_verdulería
+giroNegocio_vulcanizadora
+giroNegocio_zapatería
+registroVentas_en un cuaderno
+registroVentas_en un sistema especial
+registroVentas_no registro
+registroContabilidad_en un cuaderno
+registroContabilidad_en un sistema especial
+registroContabilidad_no registro
+tiempoCreditoProveedores_más de un mes
+tiempoCreditoProveedores_no contesto
+tiempoCreditoProveedores_no me dan crédito
+tiempoCreditoProveedores_un mes
+tiempoCreditoProveedores_una semana

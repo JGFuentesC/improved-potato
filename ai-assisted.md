@@ -1,24 +1,25 @@
-# AI Assisted Coding Progress - Fraud Model Training
+# AI Assisted Coding Progress - SME Logistic Regression Model
 
 ## Status: ✅ Finished
 
 ### Tasks:
 
-- [x] Context analysis and requirement clarification. (Preprocessing 10/10)
-- [x] Implement preprocessing logic (approved).
-- [x] Generate training script `scripts/train_fraud_model.py`.
-- [x] Setup logic for CV(5) + GridSearch + ROC/AUC Assets.
+- [x] Context analysis and requirement clarification from `notebooks/sme_decision_tree_analysis.ipynb`. (Understanding 10/10)
+- [x] Generate training script `scripts/train_sme_logistic.py`.
+- [x] Implement preprocessing: One-Hot Encoding + StandardScaler.
+- [x] Implement Logistic Regression with L1 (Lasso) feature selection.
+- [x] Generate Markdown report `model_assets/sme_logistic_report.md`.
+- [x] Save model artifacts (`.pkl`) and visualization plots (ROC, Confusion Matrix).
 
 ### Final Results:
 
-- **Script:** `scripts/train_fraud_model.py`
-- **Output Directory:** `model_assets/` (ROC curves and .pkl)
-- **Features:** One-Hot Encoding for `d_` variables, GridSearch for optimized Decision Tree.
+- **Model:** `model_assets/sme_logistic_v1.pkl` (AUC: 0.8004)
+- **Report:** `model_assets/sme_logistic_report.md`
+- **Script:** `scripts/train_sme_logistic.py`
 
 ### Progress Log:
 
-- [x] Input file `data/fraud_sample.csv` confirmed.
-- [x] Folders `scripts/` and `model_assets/` created.
-- [x] Final training script generated with ROC identification (`DecisionTree_Fraud_v1`).
-
----
+- [x] Confirmed target: `altaSAT` prediction.
+- [x] Confirmed no class balancing.
+- [x] Confirmed feature selection specific for Logistic Regression.
+- [x] Script name defined: `scripts/train_sme_logistic.py`.

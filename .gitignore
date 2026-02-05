@@ -3,3 +3,4 @@
 **/*.csv
 **/*.json
 **/*.pkl
+.DS_Store

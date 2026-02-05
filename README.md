@@ -1,58 +1,66 @@
-# Análisis de Árbol de Decisión - Pymes México (SME)
+# Análisis de Modelado Predictivo - Pymes México (SME)
 
-Este repositorio contiene un flujo de trabajo completo e interactivo para el análisis y modelado de datos de Pymes en México, enfocado originalmente en un flujo de **Orange Data Mining** y replicado didácticamente en **Python**.
+Este repositorio contiene un flujo de trabajo avanzado para el análisis y modelado de datos de Pymes en México. Evolucionó de una fase didáctica basada en **Árboles de Decisión** hacia una fase de producción y optimización mediante **Regresión Logística**.
 
 ## 🚀 Objetivo del Proyecto
 
-El objetivo principal es predecir la variable `altaSAT` (estatus de alta ante el SAT) utilizando un modelo de **Árbol de Decisión**, optimizado mediante técnicas de ciencia de datos profesionales como la selección de variables por Ganancia de Información y la sintonización de hiperparámetros.
+El corazón del proyecto es predecir el estatus de formalidad de las Pymes (`altaSAT`) mediante algoritmos de aprendizaje supervisado, permitiendo identificar patrones de comportamiento comercial y contable en el ecosistema mexicano.
 
 ## 🛠️ Tecnologías Utilizadas
 
 - **Python 3.13+**
-- **uv**: Gestión ultra rápida de entornos virtuales y dependencias.
-- **Scikit-Learn**: Entrenamiento y validación del modelo.
-- **Pandas/NumPy**: Preprocesamiento de datos.
-- **Matplotlib/Seaborn**: Visualizaciones premium y didácticas.
-- **Jupyter Notebook**: Documentación interactiva.
+- **uv**: Gestión ultra rápida de entornos y dependencias.
+- **Scikit-Learn**: Entrenamiento, optimización (GridSearch) y validación.
+- **Pandas/NumPy**: Ingeniería de datos.
+- **Matplotlib/Seaborn**: Visualizaciones premium (Midnight Gold Style).
 
-## 📈 Lo que hicimos hoy
+---
 
-Replicamos el flujo visual de Orange en el notebook `notebooks/sme_decision_tree_analysis.ipynb`, cubriendo los siguientes pasos:
+## 📈 Hitos del Desarrollo
 
-1.  **Ingesta y Limpieza**: Filtrado de la clase `o` en `altaSAT` y mapeo binario (`s=1`, `n=0`).
-2.  **Ranking de Variables (Rank)**: Implementación de Ganancia de Información (Information Gain) mediante `mutual_info_classif` para identificar los 5 predictores más potentes.
-3.  **Híper-parametrización**: Uso de `GridSearchCV` con validación cruzada ($k=5$) para encontrar la mejor profundidad y criterio del árbol.
-4.  **Entrenamiento Didáctico**: Partición de datos 70/30 (Train/Test).
-5.  **Visualización Premium**:
-    - **Tree Viewer**: Diagrama del árbol final con proporciones de clase y colores vibrantes.
-    - **Curva ROC y AUC**: Gráfica estética para medir la capacidad de discriminación del modelo.
-    - **Métricas de Score**: Precision, Recall, F1-Score y Accuracy con explicaciones detalladas para estudiantes.
+### 1. Resolución de Práctica: Árboles de Decisión (Commit Anterior)
+
+Se completó la resolución de la práctica de modelos no paramétricos:
+
+- **Notebook**: `notebooks/practica_arboles.ipynb`.
+- **Implementación**: Análisis de nodos, profundidad óptima y visualización de reglas de decisión.
+- **Resultado**: Modelo `DecisionTree_Fraud_v1` enfocado en la interpretabilidad de reglas de negocio.
+
+### 2. Modelo de Regresión Logística Optimizado (Tarea Actual)
+
+Se implementó un script de entrenamiento robusto para Pymes:
+
+- **Script**: `scripts/train_sme_logistic.py`.
+- **Preprocesamiento**: Estandarización de variables y codificación One-Hot.
+- **Optimización**: Uso de **GridSearchCV** para hallar la regularización óptima (`C`) y **Lasso (L1)** para selección de variables.
+- **Visualización Midnight Gold**:
+  - **Curva ROC Dual**: Comparativa sincronizada entre Entrenamiento y Prueba.
+  - **Matriz de Confusión**: Análisis de precisión predictiva con estética de alto contraste.
+- **Reporte Ejecutivo**: Generación automática de `model_assets/sme_logistic_report.md`.
+
+---
 
 ## 📁 Estructura del Repositorio
 
 - `data/sme_mx.csv`: Dataset original de Pymes.
-- `notebooks/sme_decision_tree_analysis.ipynb`: Notebook principal con el análisis detallado.
-- `Orange/DT SME.ows`: Flujo de trabajo original de Orange Data Mining.
-- `requirements.txt`: Lista de dependencias del proyecto.
-- `ai-assisted.md`: Log de progreso del desarrollo asistido por IA.
+- `notebooks/`:
+  - `sme_decision_tree_analysis.ipynb`: Replicación del flujo de Orange.
+  - `practica_arboles.ipynb`: Resolución de la práctica académica.
+- `scripts/`:
+  - `train_sme_logistic.py`: Entrenamiento optimizado del modelo logístico.
+- `model_assets/`: Reportes, modelos serializados (`.pkl`) y gráficas de alta fidelidad.
+- `ai-assisted.md`: Log detallado de tareas y progreso asistido.
 
 ## ⚙️ Instalación y Uso
 
-Para ejecutar este proyecto localmente usando `uv`:
-
 ```bash
-# Instalar uv si no lo tienes
-curl -LsSf https://astral.sh/uv/install.sh | sh
+# Iniciar entorno y dependencias con uv
+uv sync
 
-# Crear entorno e instalar dependencias
-uv venv
-source .venv/bin/activate
-uv pip install -r requirements.txt
-
-# Lanzar el notebook
-jupyter notebook notebooks/sme_decision_tree_analysis.ipynb
+# Ejecutar el entrenamiento del modelo logístico
+uv run python scripts/train_sme_logistic.py
 ```
 
 ---
 
-_Desarrollado para fines académicos por JGFuentesC con asistencia de Antigravity._
+_Desarrollado con rigor académico y asistencia de Antigravity._
