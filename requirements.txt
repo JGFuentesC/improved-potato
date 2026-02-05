@@ -6,3 +6,4 @@ numpy
 ipykernel
 graphviz
 jupyter
+woe-credit-scoring
